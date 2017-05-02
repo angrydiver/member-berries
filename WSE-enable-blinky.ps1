@@ -24,3 +24,9 @@ foreach ($user in $users) {
 	Enable-MWIService -UMUser $user.DisplayName -IPGateway "Nortel CS1000-10.6.10.10" -Extension $user.DN -VM yes -FX no -MC no -SmsOnVM no -SmsOnFX no -SmsOnMC no -OOF no
 	get-mailbox $user.DisplayName | set-mailbox -customattribute1 ("UM Enabled on " + (get-date -format g))
 } 
+
+
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+# IF THIS CODE AND INFORMATION IS MODIFIED, THE ENTIRE RISK OF USE OR RESULTS IN
+# CONNECTION WITH THE USE OF THIS CODE AND INFORMATION REMAINS WITH THE US
